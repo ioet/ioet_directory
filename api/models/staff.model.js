@@ -9,7 +9,9 @@ var StaffSchema = new mongoose.Schema({
   start_date: Date,
   city: String, 
   country: String,
-  reportsTo: String,
+  reportsTo: [ 
+    { type: String }
+  ],
 	directReports: [ 
     { type: String }
 	]

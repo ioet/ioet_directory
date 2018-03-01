@@ -6,4 +6,5 @@ export class Employee {
   city: string;
   email: string;
   country: string;
+  reportsTo: string[];
 }
