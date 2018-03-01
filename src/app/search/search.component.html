@@ -1,0 +1,14 @@
+<mat-form-field class="example-full-width">
+	<input matInput #searchBox placeholder="Name" (keyup)="search(searchBox.value)">
+</mat-form-field>
+
+<ul>
+	<li *ngFor="let employee of employees">
+    	<a>
+      		<span>{{employee.name}}</span>
+    	</a>
+  	</li>
+</ul>
+
+<button mat-raised-button color="primary" (click)="search()">BUSCAR</button>
+
