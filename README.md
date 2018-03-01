@@ -1,7 +1,7 @@
-### ioet_directory:
+#### IOET DIRECTORY:
 Workshop to learn about Angular. Includes MongoDB, Mongoose, Node.js, Express.js.
 
-### Tested on:
+#### Tested on:
 * Lubuntu 17.10
 * Angular CLI: 1.7.1
 * Node: 8.9.4
