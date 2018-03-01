@@ -8,27 +8,38 @@ import { AppComponent } from './app.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
-//Material imports
+// Material imports
 import { MaterialModule } from './material.module';
+
+// Components
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+
+// Services
+import { EmployeeService } from './services/employee.service';
 
 const appRoutes: Routes = [
+  { path: '',
+    redirectTo: '/staff',
+    pathMatch: 'full'
+  },
   {
     path: 'staff',
     component: SearchComponent,
     data: { title: 'Directory' }
   },
-  { path: '',
-    redirectTo: '/staff',
-    pathMatch: 'full'
+  { path: 'staff/:id',
+    component: EmployeeDetailComponent,
+    data: { title: 'Employee Detail' }
   }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +52,9 @@ const appRoutes: Routes = [
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    EmployeeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

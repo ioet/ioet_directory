@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import {Observable} from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
 import { Employee } from '../class/employee';
+import { EmployeeService } from '../services/employee.service';
 
 import 'hammerjs';
 
@@ -18,7 +18,9 @@ export class SearchComponent implements OnInit {
 
   employees: Employee[]
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private employeeService: EmployeeService
+   ) { }
 
   ngOnInit() {
   }
@@ -26,7 +28,7 @@ export class SearchComponent implements OnInit {
   search(nombre: String) {
     this.employees = []
     if(nombre !== ''){
-      this.http.get<Employee[]>(url + `/staff/${nombre}`).subscribe(heroes => this.employees = heroes);
+      this.employeeService.searchByName(nombre).subscribe(heroes => this.employees = heroes);
     }
   }
 
