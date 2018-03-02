@@ -1,6 +1,6 @@
 #### IOET DIRECTORY:
-*Workshop to learn about Angular. Includes MongoDB, Mongoose, Node.js, Express.js, mLab, Docker.
-*Its a simple application to search information about ioet employees.
+* Workshop to learn about Angular. Includes MongoDB, Mongoose, Node.js, Express.js, mLab, Docker.
+* Its a simple application to search information about ioet employees.
 
 #### Tested on:
 * Lubuntu 17.10
@@ -20,11 +20,11 @@
 * Run `docker run -p 4000:3000 boscoand/ioet_directory:part2`
 
 #### To Do:
-#####Part 1: 
+##### Part 1: 
 - [ ] Show "reports to" and "direct reports" of a selected employee. 
 - [ ] Show employee detail in popup.
 - [ ] Services by add, update, and delete employees.
 - [ ] Interface by add, update, and delete employees.
-#####Part 2: 
+##### Part 2: 
 - [ ] Add mongo database in other Docker container.
 
