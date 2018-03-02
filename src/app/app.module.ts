@@ -21,15 +21,15 @@ import { EmployeeService } from './services/employee.service';
 
 const appRoutes: Routes = [
   { path: '',
-    redirectTo: '/staff',
+    redirectTo: 'view/staff',
     pathMatch: 'full'
   },
   {
-    path: 'staff',
+    path: 'view/staff',
     component: SearchComponent,
     data: { title: 'Directory' }
   },
-  { path: 'staff/:id',
+  { path: 'view/staff/:id',
     component: EmployeeDetailComponent,
     data: { title: 'Employee Detail' }
   }

@@ -3,7 +3,7 @@
 </mat-form-field>
 
 <mat-nav-list>
-  <a mat-list-item *ngFor="let employee of employees" routerLink="/staff/{{employee._id}}">
+  <a mat-list-item *ngFor="let employee of employees" routerLink="/view/staff/{{employee._id}}">
   	{{employee.name}}
   	<mat-divider></mat-divider>
    </a>

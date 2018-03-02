@@ -24,7 +24,6 @@ module.exports = {
 
 		const id = req.params.id
 		staff.find({'_id': id}, (error, employee) => {
-			console.log(employee)
 			res.send(employee);
     })
 

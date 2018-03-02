@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5a96ec83c72544a290b6154a"},"name":"Bosco Andrade Bravo","role":"Developer","phone":"0990045912","email":"bandrade@ioet.com","city":"Guayaquil","country":"Ecuador","reportsTo":["5a96ecfec72544a290b61586"],"directReports":[]}
+{"_id":{"$oid":"5a96ecfec72544a290b61586"},"name":"Juan Garcia","role":"Engineering Manager","phone":"0990045912","email":"jgarcia@ioet.com","city":"Guayaquil","country":"Ecuador","reportsTo":[],"directReports":["5a96ec83c72544a290b6154a"]}

@@ -5,7 +5,8 @@ import {Observable} from 'rxjs/Rx';
 
 import { Employee } from '../class/employee';
 
-var url = "http://localhost:3000";
+//var url = "http://localhost:3000";
+var url = "";
 
 @Injectable()
 export class EmployeeService {

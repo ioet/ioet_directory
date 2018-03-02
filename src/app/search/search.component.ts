@@ -7,8 +7,6 @@ import { EmployeeService } from '../services/employee.service';
 
 import 'hammerjs';
 
-var url = "http://localhost:3000";
-
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
