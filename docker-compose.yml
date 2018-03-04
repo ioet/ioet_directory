@@ -1,0 +1,16 @@
+version: "2"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: boscoand/ioet_directory:part3
+    ports:
+      - "4000:3000"
+    links:
+      - mongo # link this service to the database service
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"

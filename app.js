@@ -12,7 +12,8 @@ var staff = require('./api/routes/staff');
 var app = express();
 
 //Mongo connection
-mongoose.connect('mongodb://admin:admin@ds255308.mlab.com:55308/ioet_directory', { promiseLibrary: require('bluebird') })
+//mongoose.connect('mongodb://admin:admin@ds255308.mlab.com:55308/ioet_directory', { promiseLibrary: require('bluebird') })
+mongoose.connect('mongodb://mongo/ioet_directory', { promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 

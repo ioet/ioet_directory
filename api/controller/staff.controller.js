@@ -16,7 +16,7 @@ module.exports = {
 
 		staff.find({'name': {'$regex': req.params.name}}, (error, employee) => {
 			res.send(JSON.stringify(employee));
-    })
+    	})
 
 	},
 
